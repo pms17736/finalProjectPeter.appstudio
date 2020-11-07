@@ -12,7 +12,7 @@ btnCreate.onclick = function() {
   query = `INSERT INTO user (username, email, password) 
 VALUES('${newUsername}','${newEmail}','${newPassword}')`
   console.log(query)
-  req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=pms17736&pass=" + pw + "&database=375pms17736&query=" + query)
+  req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=pms17736&pass=" + "Awkward99!" + "&database=375pms17736&query=" + query)
 console.log(req.status)
   if (req.status == 200) { //transit worked.
   console.log(req.responseText)
