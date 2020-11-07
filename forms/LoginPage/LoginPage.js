@@ -8,14 +8,14 @@ btnLogin.onclick=function() {
   let inputUsername = inptUsername.value
   let inputPassword = inptPassword.value
  query1 = `SELECT  username FROM user`
-  req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kmh76825&pass=" + pw + "&database=375groupa1&query=" + query1)
+  req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=pms17736&pass=" + pw + "&database=375pms17736&query=" + query1)
   if (req.status == 200) { //transit worked.
           console.log(req.status)
           console.log(req.responseText)
           results1 = JSON.parse(req.responseText)
           console.log(results1)
            query2 = `SELECT  password FROM user`
-        req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kmh76825&pass=" + pw + "&database=375groupa1&query=" + query2)
+        req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=pms17736&pass=" + pw + "&database=375pms17736&query=" + query2)
           if (req.status == 200) { //transit worked.
             console.log(req.status)
             console.log(req.responseText)
